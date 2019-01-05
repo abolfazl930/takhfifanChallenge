@@ -21,14 +21,15 @@ body{
 
 .main{
   background-color:var(--color-1);
+  overflow-x: hidden;
+  position: relative;
+}
+.main__layer-one{
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
-  position: relative;
 }
-
 .main__layer-one__download-box{
   width: 617px;
   height: 536px;
@@ -71,6 +72,15 @@ body{
   display: none;
 }
 
+.main__layer-one__social-media {
+  display: none;
+}
+
+.main__layer-one__social-media img {
+  margin: 0 var(--size-4);
+}
+
+/* mediaQuery Start */
 @media (min-width: 576px) { 
   .main__layer-one__download-box__body {
     max-width: 400px;
@@ -101,6 +111,13 @@ body{
   }
   .click_main__layer-one__animate-image-nexus {
     left: 157;
+  }
+  .main__layer-one__social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -340px;
   }
 }
 
