@@ -24,12 +24,14 @@ body{
   overflow-x: hidden;
   position: relative;
 }
+
 .main__layer-one{
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .main__layer-one__download-box{
   width: 617px;
   height: 536px;
@@ -60,7 +62,7 @@ body{
 
 .main__layer-one__download-box__footer__button{
   padding: var(--size-16) var(--size-50);
-  border-radius: var(--border-radius);
+  border-radius: var(--size-50);
   border: 0;
   background-color: var(--color-3);
   color:var(--color-2);
@@ -97,21 +99,25 @@ body{
     transition: all .3s;
     bottom: 20%;
   }
+
   .main__layer-one__animate-image-iphone {
     width: 220px;
     left: -220px;
   }
+  
   .main__layer-one__animate-image-nexus{
     width: 270px;
     left: -270px;
   }
 
-  .click_main__layer-one__animate-image-iphone {
+  .main__layer-one__animate-image-iphone--clicked {
     left: 0;
   }
-  .click_main__layer-one__animate-image-nexus {
+
+  .main__layer-one__animate-image-nexus--clicked {
     left: 157;
   }
+
   .main__layer-one__social-media {
     display: flex;
     justify-content: center;
