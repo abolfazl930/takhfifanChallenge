@@ -1,0 +1,107 @@
+:root{
+  --color-1:#f4f4f4;
+  --color-2:#ffffff;
+  --color-3:#ff5a60;
+  --color-4:rgba(0, 0, 0, 0.27);
+  --color-5:#a5a5a5;
+  --size-4:4px;
+  --size-8:8px;
+  --size-12:12px;
+  --size-16:16px;
+  --size-25:25px;
+  --size-30:30px;
+  --size-50:50px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.main{
+  background-color:var(--color-1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.main__layer-one__download-box{
+  width: 617px;
+  height: 536px;
+  border-radius: var(--size-50);
+  box-shadow: 0 0 200px 0 var(--color-4);
+  background-color: var(--color-2);
+  margin: 0 var(--size-16);
+  padding: 0 var(--size-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main__layer-one__download-box__div{
+  text-align: center;
+}
+
+ .main__layer-one__download-box__header h1{
+   margin: 0;
+   font-weight: normal;
+ }
+
+.main__layer-one__download-box__body__p{
+  line-height: var(--size-30);
+  color:var(--color-5)
+}
+
+.main__layer-one__download-box__footer__button{
+  padding: var(--size-16) var(--size-50);
+  border-radius: var(--border-radius);
+  border: 0;
+  background-color: var(--color-3);
+  color:var(--color-2);
+  cursor: pointer;
+  outline: none;
+}
+
+.main__layer-one__animate-image {
+  display: none;
+}
+
+@media (min-width: 576px) { 
+  .main__layer-one__download-box__body {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) { }
+
+ @media (min-width: 992px) { 
+  .main__layer-one__animate-image{
+    display: block;
+    position: absolute;
+    right: 0;
+    transition: all .3s;
+    bottom: 20%;
+  }
+  .main__layer-one__animate-image-iphone {
+    width: 220px;
+    left: -220px;
+  }
+  .main__layer-one__animate-image-nexus{
+    width: 270px;
+    left: -270px;
+  }
+
+  .click_main__layer-one__animate-image-iphone {
+    left: 0;
+  }
+  .click_main__layer-one__animate-image-nexus {
+    left: 157;
+  }
+}
+
+@media (min-width: 1200px) {  }
