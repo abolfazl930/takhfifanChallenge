@@ -121,31 +121,14 @@ body{
   left: 0;
   margin: auto;
   background: var(--color-3);
-
+  transition: clip-path 1s;
 }
 
 .main__circle--clicked{
-  /* animation-name:example;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards; */
-}
-/* 
-@keyframes example {
-  0%   {clip-path: circle(2%);bottom:-300px}
-  100%  {clip-path: circle(100%);bottom:0;}
+  clip-path: circle(100%);
+  bottom: 0;
 }
 
-@keyframes example {
-  0%   {clip-path: circle(2%);bottom:-300px}
-  100%  {clip-path: circle(100%);bottom:0;}
-} */
-
-abolfazlabolfazlabolfazlabolfazlabolfazlabolfazl
-scscsdc
-dcdcdcd
-dcdcdc
-dcdc
 /* mediaQuery Start */
 @media (min-width: 576px) { 
   .main__layer-one__download-box__body {
