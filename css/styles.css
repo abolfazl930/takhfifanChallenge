@@ -25,6 +25,13 @@ body{
   position: relative;
 }
 
+.main__event {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 .main__layer-one{
   height: 100vh;
   display: flex;
@@ -72,21 +79,21 @@ body{
 }
 
 .main__layer-one__animate-image{
-  display: block;
   position: absolute;
-  right: 0;
-  transition: all .5s;
+  transition: all 1s;
   bottom: 20%;
 }
 
 .main__layer-one__animate-image-iphone {
   width: 220px;
-  left: -220px;
+  left: 0;
+  transform: translateX(-220px);
 }
 
 .main__layer-one__animate-image-nexus{
   width: 270px;
-  left: -270px;
+  left: 0;
+  transform: translateX(-270px);
 }
 
 .main__layer-one__social-media {
@@ -94,14 +101,51 @@ body{
   justify-content: center;
   align-items: center;
   position: absolute;
-  transition: all .5s;
-  left: 100%;
+  transition: all 1s;
+  right: 0;
+  transform: translateX(340px);
 }
 
 .main__layer-one__social-media img {
   margin: 0 var(--size-4);
 }
 
+.main__circle {
+  position: absolute;
+  clip-path: circle(2%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: -300px;
+  left: 0;
+  margin: auto;
+  background: var(--color-3);
+
+}
+
+.main__circle--clicked{
+  /* animation-name:example;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+/* 
+@keyframes example {
+  0%   {clip-path: circle(2%);bottom:-300px}
+  100%  {clip-path: circle(100%);bottom:0;}
+}
+
+@keyframes example {
+  0%   {clip-path: circle(2%);bottom:-300px}
+  100%  {clip-path: circle(100%);bottom:0;}
+} */
+
+abolfazlabolfazlabolfazlabolfazlabolfazlabolfazl
+scscsdc
+dcdcdcd
+dcdcdc
+dcdc
 /* mediaQuery Start */
 @media (min-width: 576px) { 
   .main__layer-one__download-box__body {
@@ -113,15 +157,15 @@ body{
 
  @media (min-width: 992px) { 
   .main__layer-one__animate-image-iphone--clicked {
-    left: 157px;
+    transform: translateX(157px);
   }
 
   .main__layer-one__animate-image-nexus--clicked {
-    left: 0;
+    transform: translateX(0);
   }
 
   .main__layer-one__social-media--clicked{
-    left: 64.5%;
+    transform: translateX(-340px);
   }
 }
 
