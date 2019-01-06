@@ -23,6 +23,9 @@ body {
   background-color: var(--color-1);
   overflow: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main__event {
@@ -34,6 +37,7 @@ body {
 
 .main__layer-one {
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,11 +116,7 @@ body {
 
 .main__circle {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: -300px;
-  left: 0;
-  margin: auto;
+  margin-top: 130px;
   background: var(--color-3);
   border-radius: 100%;
   transition: all 2s;
@@ -128,11 +128,18 @@ body {
 }
 
 /* mediaQuery Start */
+
 @media (min-width: 576px) {
   .main__layer-one__download-box__body {
     max-width: 400px;
   }
 }
+
+/* @media (min-width: 668px) {
+  .main__layer-one__download-box {
+    width: 617px;
+  }
+} */
 
 @media (min-width: 768px) {
 }
