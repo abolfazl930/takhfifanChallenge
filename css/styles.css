@@ -148,7 +148,7 @@ body{
   }
 
   .main__layer-one__social-media--clicked{
-    transform: translateX(-340px);
+    transform: translateX(-320px);
   }
 }
 
